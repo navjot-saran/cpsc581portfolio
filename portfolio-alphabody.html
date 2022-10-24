@@ -85,47 +85,49 @@
         <div class="col-lg-7">
           <h2>Demo Video</h2>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/MUiNdChiDOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
-          <p>This time we designed two phone unlock interfaces. Alphabody Unlock (Pose based Screen-unlock): Our other design approach was camera based. The idea was to use the teachable machine shown in lecture to train a model using our whole bodies as letters. Swiping up begins the unlock session. A letter is determined by the orientation of the user's whole body. A letter is entered into the password bar every time the timer reaches 0. Users are initially given 20 seconds to get ready in front of the camera. Each countdown after that gives the user 10 seconds to hold their pose for their intended letter. A delete button allows the user to delete the last letter entry. Correct password entries unlock the phone, while incorrect entries result in an error message and restart the session.</p>
+          
+          <h3 data-aos="fade-up" data-aos-delay="100" class="mb-4">Project Details</h3>
+          <p data-aos="fade-up" data-aos-delay="100" >This time we designed two phone unlock interfaces. Alphabody Unlock (Pose based Screen-unlock): Our other design approach was camera based. The idea was to use the teachable machine shown in lecture to train a model using our whole bodies as letters. Swiping up begins the unlock session. A letter is determined by the orientation of the user's whole body. A letter is entered into the password bar every time the timer reaches 0. Users are initially given 20 seconds to get ready in front of the camera. Each countdown after that gives the user 10 seconds to hold their pose for their intended letter. A delete button allows the user to delete the last letter entry. Correct password entries unlock the phone, while incorrect entries result in an error message and restart the session.</p>
 
-          <h3 class="mb-4">How and why we came up with it</h3>
-          <p>After seeing many teachable machine examples we decided to design something using a camera as the sensor. We came up with several ideas like yoga pose sequences or dance, but the body poses as letters idea won over. We chose it because it's easier to track the sequence of poses entered if that data is represented by letters instead of yoga pose names or dance move names. With our design, users can delete past letter entries if they were unintentionally registered. A phone can be secure if a user wants or needs it, as long as they hide before entering their password and make a good one. 
+          <h3 data-aos="fade-up" data-aos-delay="100" class="mb-4">How and why we came up with it</h3>
+          <p data-aos="fade-up" data-aos-delay="100" >After seeing many teachable machine examples we decided to design something using a camera as the sensor. We came up with several ideas like yoga pose sequences or dance, but the body poses as letters idea won over. We chose it because it's easier to track the sequence of poses entered if that data is represented by letters instead of yoga pose names or dance move names. With our design, users can delete past letter entries if they were unintentionally registered. A phone can be secure if a user wants or needs it, as long as they hide before entering their password and make a good one. 
         </p>
 
-          <h2>Detailed Sketches</h2>
-          <a href="images/pose1.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose1.png" alt="Image" class="img-fluid"></a>
-          <p>We came up with many pose type unlock methods and chose posing letters because it made classification easy. By swiping the screen upward, the unlock process begins. This avoids accidental unlocks. It serves as the homescreen where the user can receive notifications and check the time as they normally can.
+          <h2 data-aos="fade-up" data-aos-delay="100" >Detailed Sketches</h2>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pose1.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose1.png" alt="Image" class="img-fluid"></a>
+          <p data-aos="fade-up" data-aos-delay="100" >We came up with many pose type unlock methods and chose posing letters because it made classification easy. By swiping the screen upward, the unlock process begins. This avoids accidental unlocks. It serves as the homescreen where the user can receive notifications and check the time as they normally can.
         </p>
-          <a href="images/pose2" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose2.png" alt="Image" class="img-fluid"></a>
-          <p>We decided we needed a button to record between each pose scan. We decided on a timer that counts down in a loop instead, for user convenience.</p>
-          <a href="images/pose3.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose3.png" alt="Image" class="img-fluid"></a>
-          <p>With a timer, the user could stay in one spot and enter the whole password. Instead of going back and forth between each letter to press a button.</p>
-          <a href="images/pose4.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose4.png" alt="Image" class="img-fluid"></a>
-          <p>The user has an x amount of seconds to pose the correct letter. When the timer hits 0, the current pose made by the user is registered.</p>
-          <a href="images/pose5.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose5.png" alt="Image" class="img-fluid"></a>
-          <p>Incorrect password entry with a try again button. We decided to go with an automatic reset after the password bar turns red instead, because a try again button makes it more like a game. The automatic reset is more alike password entry so it is good for a phone unlock design that uses letters.</p>
-          <a href="images/pose6.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose6.png" alt="Image" class="img-fluid"></a>
-          <p>We also decided not to go with an input method that gives feedback on every entry. This is less secure than what we changed it to - users inputting the whole password before hitting enter for the password.</p>
-          <a href="images/pose7.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose7.png" alt="Image" class="img-fluid"></a>
-          <p>Each letter being added in after the timer reaches 0.</p>
-          <a href="images/pose8.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose8.png" alt="Image" class="img-fluid"></a>
-          <p>We decided 10 seconds is a good enough time for users to pose for each letter scan. Not so long that password entry takes too long and not so so quick that users struggle to pose in time.</p>
-          <a href="images/pose9.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose9.png" alt="Image" class="img-fluid"></a>
-          <p>Instead of this, we went with the full password entry, then hit enter design.</p>
-          <a href="images/pose10.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose10.png" alt="Image" class="img-fluid"></a>
-          <p>This was the general idea; to pose the correct sequence of letters, then hit enter to unlock the phone. This is secure from being opened accidentally.</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pose2" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose2.png" alt="Image" class="img-fluid"></a>
+          <p data-aos="fade-up" data-aos-delay="100" >We decided we needed a button to record between each pose scan. We decided on a timer that counts down in a loop instead, for user convenience.</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pose3.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose3.png" alt="Image" class="img-fluid"></a>
+          <p data-aos="fade-up" data-aos-delay="100" >With a timer, the user could stay in one spot and enter the whole password. Instead of going back and forth between each letter to press a button.</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pose4.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose4.png" alt="Image" class="img-fluid"></a>
+          <p data-aos="fade-up" data-aos-delay="100" >The user has an x amount of seconds to pose the correct letter. When the timer hits 0, the current pose made by the user is registered.</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pose5.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose5.png" alt="Image" class="img-fluid"></a>
+          <p data-aos="fade-up" data-aos-delay="100" >Incorrect password entry with a try again button. We decided to go with an automatic reset after the password bar turns red instead, because a try again button makes it more like a game. The automatic reset is more alike password entry so it is good for a phone unlock design that uses letters.</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pose6.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose6.png" alt="Image" class="img-fluid"></a>
+          <p data-aos="fade-up" data-aos-delay="100" >We also decided not to go with an input method that gives feedback on every entry. This is less secure than what we changed it to - users inputting the whole password before hitting enter for the password.</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pose7.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose7.png" alt="Image" class="img-fluid"></a>
+          <p data-aos="fade-up" data-aos-delay="100" >Each letter being added in after the timer reaches 0.</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pose8.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose8.png" alt="Image" class="img-fluid"></a>
+          <p data-aos="fade-up" data-aos-delay="100" >We decided 10 seconds is a good enough time for users to pose for each letter scan. Not so long that password entry takes too long and not so so quick that users struggle to pose in time.</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pose9.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose9.png" alt="Image" class="img-fluid"></a>
+          <p data-aos="fade-up" data-aos-delay="100" >Instead of this, we went with the full password entry, then hit enter design.</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pose10.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pose10.png" alt="Image" class="img-fluid"></a>
+          <p data-aos="fade-up" data-aos-delay="100" >This was the general idea; to pose the correct sequence of letters, then hit enter to unlock the phone. This is secure from being opened accidentally.</p>
 
-          <h2>Concept Sketches</h2>
-          <p>While deciding on how we should design our machine learning unlock system. We had initially come up with 10 designs that detect, fingerprints, hand signs, rotations for a maze, rotations for a padlock, rubik’s cube pattern, audio for a line from a song, pointed direction sequence, audio for hitting a note, audio for detecting note, and poses made for letters. Out of all these ideas we eventually picked the pose unlock as it is unique since it uses the users whole body, while also having really good security as the user must know the password and how to make the letters to unlock it.</p>
-          <a href="images/pr1.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pr1.png" alt="Image" class="img-fluid"></a>
-          <a href="images/pr2.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pr2.png" alt="Image" class="img-fluid"></a>
-          <a href="images/t5.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/t5.png" alt="Image" class="img-fluid"></a>
+          <h2 data-aos="fade-up" data-aos-delay="100" >Concept Sketches</h2>
+          <p data-aos="fade-up" data-aos-delay="100" >While deciding on how we should design our machine learning unlock system. We had initially come up with 10 designs that detect, fingerprints, hand signs, rotations for a maze, rotations for a padlock, rubik’s cube pattern, audio for a line from a song, pointed direction sequence, audio for hitting a note, audio for detecting note, and poses made for letters. Out of all these ideas we eventually picked the pose unlock as it is unique since it uses the users whole body, while also having really good security as the user must know the password and how to make the letters to unlock it.</p>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pr1.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pr1.png" alt="Image" class="img-fluid"></a>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/pr2.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/pr2.png" alt="Image" class="img-fluid"></a>
+          <a data-aos="fade-up" data-aos-delay="100" href="images/t5.png" class="mb-3 d-block" data-fancybox="gal"><img src="images/t5.png" alt="Image" class="img-fluid"></a>
           
 
-          <h2>My Contribution</h2>
-          <p>We discussed our ideas and made sketches which we sent to the group. I slowly helped develop both ideas and helped polish up the code. I also helped record the video and then did the project documentation.</p>
+          <h2 data-aos="fade-up" data-aos-delay="100" >My Contribution</h2>
+          <p data-aos="fade-up" data-aos-delay="100" >We discussed our ideas and made sketches which we sent to the group. I slowly helped develop both ideas and helped polish up the code. I also helped record the video and then did the project documentation.</p>
 
-          <h2>Limitations and Issues</h2>
-          <p>This design is secure as long as the user unlocks their phone in total privacy. That is a major limitation because the user has to display their whole body in their phones camera. This means they must be far enough away and have to make movements that attract attention. It is otherwise as secure as any simple text based password interface, because the data we trained the machine with translates to letters. Users must also sort of memorize specific body orientations for letters. They may not always be the most intuitive since we trained the machine with our own specific models instead of every user. A potential fix to that issue is to allow users to train their own models for every letter.
+          <h2 data-aos="fade-up" data-aos-delay="100" >Limitations and Issues</h2>
+          <p data-aos="fade-up" data-aos-delay="100" >This design is secure as long as the user unlocks their phone in total privacy. That is a major limitation because the user has to display their whole body in their phones camera. This means they must be far enough away and have to make movements that attract attention. It is otherwise as secure as any simple text based password interface, because the data we trained the machine with translates to letters. Users must also sort of memorize specific body orientations for letters. They may not always be the most intuitive since we trained the machine with our own specific models instead of every user. A potential fix to that issue is to allow users to train their own models for every letter.
             
             </p>
             <h2 data-aos="fade-up" data-aos-delay="100" >GitHub: <a href="https://github.com/FysalBeau/Pose-Unlock">Alphabody Unlock Code</a></h2>
